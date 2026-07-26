@@ -59,7 +59,7 @@ export function JellyfishForest() {
           </h2>
         </Reveal>
         <Reveal delay={0.3}>
-          <p className="mx-auto mt-4 max-w-md font-sans text-surface/70">
+          <p className="mx-auto mt-4 max-w-md font-sans text-surface/90">
             Each glowing jelly carries a thought meant for you. Reach out —
             they don&apos;t mind.
           </p>

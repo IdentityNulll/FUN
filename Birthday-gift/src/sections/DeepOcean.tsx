@@ -35,7 +35,7 @@ export function DeepOcean() {
           </h2>
         </Reveal>
         <Reveal delay={0.5}>
-          <p className="mx-auto mt-6 max-w-sm font-sans text-surface/50">
+          <p className="mx-auto mt-6 max-w-sm font-sans text-surface/80">
             The deepest parts of the ocean glow softest. So do the deepest
             parts of the people we love.
           </p>

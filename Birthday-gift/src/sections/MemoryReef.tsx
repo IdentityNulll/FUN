@@ -42,7 +42,7 @@ export function MemoryReef() {
           </h2>
         </Reveal>
         <Reveal delay={0.3}>
-          <p className="mx-auto mt-4 max-w-md font-sans text-surface/70">
+          <p className="mx-auto mt-4 max-w-md font-sans text-surface/90">
             Little pieces of us, swaying with the current. Tap one to hold it
             for a while.
           </p>
@@ -91,7 +91,7 @@ export function MemoryReef() {
                   className="max-h-[70vh] w-full rounded-2xl object-contain"
                 />
               ) : (
-                <div className="flex aspect-[4/3] w-[70vw] max-w-xl items-center justify-center rounded-2xl bg-gradient-to-br from-deep/60 to-abyss text-center text-surface/60">
+                <div className="flex aspect-[4/3] w-[70vw] max-w-xl items-center justify-center rounded-2xl bg-gradient-to-br from-deep/60 to-abyss text-center text-surface/85">
                   <span className="px-8">
                     Add this photo at{' '}
                     <code className="text-glow-cyan">{active.src}</code>

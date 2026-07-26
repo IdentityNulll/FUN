@@ -40,7 +40,7 @@ export function MemoryCard({ memory, index, onOpen }: MemoryCardProps) {
             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
         ) : (
-          <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-gradient-to-br from-deep/60 via-dark/60 to-abyss text-surface/50">
+          <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-gradient-to-br from-deep/60 via-dark/60 to-abyss text-surface/80">
             <HiOutlinePhoto size={34} />
             <span className="px-4 text-center text-xs">
               add your photo at

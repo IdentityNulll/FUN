@@ -7,10 +7,10 @@
  */
 
 /** Your bestie's name (used across the experience). */
-export const RECIPIENT_NAME = 'Bestie';
+export const RECIPIENT_NAME = 'Nihola';
 
 /** Who it's from — shown small in the final scene. Leave '' to hide. */
-export const FROM = 'your favourite person';
+export const FROM = 'Abubakr.';
 
 /** SECTION 2 — Coral Reef. Each shell opens to reveal one of these. */
 export interface ShellMessage {

@@ -8,7 +8,7 @@ import { useAudio } from '../context/AudioProvider';
 import { useDive } from '../context/DiveProvider';
 import { EASE } from '../utils/constants';
 
-type Stage = 'closed' | 'open' | 'rising' | 'moon';
+type Stage = 'closed' | 'open' | 'rising' | 'moon' | 'done';
 
 /**
  * SECTION 7 — Treasure Chamber. An ancient chest glows in the dark. Opening
@@ -32,8 +32,10 @@ export function TreasureChamber() {
       play('sparkle');
       setStage('moon');
     }, 3600);
-    // carry them up to the final scene as the moon blooms
-    setTimeout(() => scrollTo('final'), 5200);
+    // carry them up to the final scene while the white flash covers the screen…
+    setTimeout(() => scrollTo('final'), 4900);
+    // …then the flash fades out and the overlay unmounts, revealing the message
+    setTimeout(() => setStage('done'), 8200);
   };
 
   return (
@@ -151,11 +153,15 @@ export function TreasureChamber() {
               className="rounded-full bg-gradient-to-br from-white via-surface to-glow-cyan"
               initial={{ width: 56, height: 56, opacity: 1 }}
               animate={{
-                width: '250vmax',
-                height: '250vmax',
-                opacity: [1, 1, 0.9],
+                width: ['56px', '250vmax', '250vmax', '250vmax'],
+                height: ['56px', '250vmax', '250vmax', '250vmax'],
+                opacity: [1, 1, 1, 0],
               }}
-              transition={{ duration: 3, ease: EASE.water }}
+              transition={{
+                duration: 4.4,
+                ease: EASE.water,
+                times: [0, 0.3, 0.62, 1],
+              }}
               style={{ boxShadow: '0 0 120px 60px rgba(190,233,255,0.9)' }}
             />
           </motion.div>

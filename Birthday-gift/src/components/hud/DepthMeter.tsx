@@ -26,7 +26,10 @@ export function DepthMeter() {
                 style={{ top: `calc(${progress * 100}% - 6px)` }}
               />
             </div>
-            <div className="font-sans text-[11px] uppercase tracking-[0.2em] text-surface/70">
+            <div
+              className="font-sans text-[11px] font-medium uppercase tracking-[0.2em] text-white/90"
+              style={{ textShadow: '0 1px 6px rgba(2,11,22,0.85)' }}
+            >
               <div className="text-glow-cyan">{depth} m</div>
               <div className="mt-1 max-w-[120px] leading-tight">
                 {SECTIONS[sectionIndex]?.label}

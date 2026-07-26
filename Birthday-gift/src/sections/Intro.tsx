@@ -98,7 +98,7 @@ export function Intro() {
 
       {/* faint hint of what's below */}
       <motion.div
-        className="pointer-events-none absolute bottom-10 text-xs uppercase tracking-[0.3em] text-surface/30"
+        className="pointer-events-none absolute bottom-10 text-xs uppercase tracking-[0.3em] text-surface/55"
         animate={{ opacity: [0.2, 0.5, 0.2] }}
         transition={{ duration: 4, repeat: Infinity }}
       >

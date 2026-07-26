@@ -70,7 +70,7 @@ export function FinalScene() {
         {FROM && (
           <Reveal delay={1 + FINAL.poem.length * 0.6 + 0.5}>
             <p className="mt-12 font-sans text-sm uppercase tracking-[0.3em] text-surface/40">
-              with love, {FROM}
+              with all respect, {FROM}
             </p>
           </Reveal>
         )}

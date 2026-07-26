@@ -49,7 +49,7 @@ export function WhaleCrossing() {
           </h2>
         </Reveal>
         <Reveal delay={0.5}>
-          <p className="mx-auto mt-6 max-w-sm font-sans text-surface/60">
+          <p className="mx-auto mt-6 max-w-sm font-sans text-surface/85">
             Stay a moment. Watch it pass. There is no hurry down here.
           </p>
         </Reveal>

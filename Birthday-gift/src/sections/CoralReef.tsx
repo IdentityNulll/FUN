@@ -38,7 +38,7 @@ export function CoralReef() {
           </h2>
         </Reveal>
         <Reveal delay={0.3}>
-          <p className="mt-4 max-w-md font-sans text-surface/70">
+          <p className="mt-4 max-w-md font-sans text-surface/90">
             Each one holds something just for you — a wish, a laugh, a little
             memory. Tap to open.
           </p>

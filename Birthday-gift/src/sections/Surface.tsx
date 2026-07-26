@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+import { HiArrowDown } from 'react-icons/hi2';
 import { Section } from '../components/ui/Section';
 import { Reveal } from '../components/ui/Reveal';
 import { SunRays } from '../components/effects/SunRays';
@@ -25,7 +27,7 @@ export function Surface() {
 
       <div className="relative z-10 max-w-2xl text-center">
         <Reveal>
-          <p className="mb-4 font-sans text-sm uppercase tracking-[0.35em] text-deep">
+          <p className="mb-4 font-sans text-sm font-medium uppercase tracking-[0.35em] text-dark">
             The Surface
           </p>
         </Reveal>
@@ -42,13 +44,20 @@ export function Surface() {
             whole world waiting beneath us.
           </p>
         </Reveal>
-      </div>
 
-      <Reveal delay={0.9} className="absolute bottom-10">
-        <span className="font-sans text-xs uppercase tracking-[0.3em] text-dark/50">
-          scroll to descend ↓
-        </span>
-      </Reveal>
+        <Reveal delay={0.9} className="mt-10 flex justify-center">
+          <motion.div
+            className="glass-strong inline-flex items-center gap-3 rounded-full px-6 py-3"
+            animate={{ y: [0, 5, 0] }}
+            transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
+          >
+            <span className="font-display text-xl font-medium tracking-wide text-dark">
+              Scroll qil!
+            </span>
+            <HiArrowDown className="text-dark" size={20} />
+          </motion.div>
+        </Reveal>
+      </div>
     </Section>
   );
 }
